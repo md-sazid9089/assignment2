@@ -548,8 +548,8 @@ body {
     }
     
     .newsletter-form {
-        flex-direction: column;
-        gap: 10px;
+        flex-direction: row;
+        /* gap: 10px; */
     }
     
     .newsletter-btn {
@@ -563,6 +563,11 @@ body {
     
     .footer-links {
         justify-content: center;
+    }
+    .footer-social{
+        display: flex;
+        gap: 12px;
+        justify-content: space-evenly;
     }
 }
 
