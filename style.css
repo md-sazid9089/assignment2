@@ -1,4 +1,5 @@
-*{
+
+    *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -13,14 +14,14 @@ body {
     max-width: 1140px;
     margin: 0 auto;
     padding: 0 20px;
-    background: #000;
-    border: solid red;
+    /* background: #000; */
+    /* border: solid red; */
 }
 .header {
     background-color: #f5f8ff;
     padding: 30px 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    border: solid blue;
+    /* border: solid blue; */
 }
 
 .header .container {
@@ -49,10 +50,540 @@ body {
     font-weight: 400;
     transition: color 0.3s ease;
 }
-
+.cart-link{
+     color: #252432;
+    font-weight: 700;
+    text-decoration: none;
+}
 .nav-link.a {
     color: #252432;
     font-weight: 700;
 }
+.hero-section {
+    padding: 48px 0;
+    background-color: #f5f8ff;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.hero-text {
+    flex: 1;
+    padding-left: 150px;
+}
+
+.hero-title {
+    font-family: 'Noto Serif', serif;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
+
+.title-black {
+    color: #000;
+}
+
+.title-orange {
+    color: #e95a08;
+}
+.hero-description {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.5);
+    line-height: 1.5;
+    max-width: 500px;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.lover-section {
+    padding: 48px 0;
+    background-color: #f5f8ff;
+}
+
+.lover-content {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    position: relative;
+}
+
+.lover-image {
+    flex: 1;
+    position: relative;
+}
+
+.lover-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.trusted-badge {
+    position: absolute;
+    top: -120px;
+    right: -120px;
+/* left: 120px; */
+    width: 286px;
+    height: 286px;
+    object-fit: cover;
+}
+
+.lover-text {
+    flex: 1;
+}
+
+.lover-title {
+    font-family: 'Noto Serif', serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.lover-description {
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+.plants-section {
+    padding: 48px 0;
+    background-color: #f5f8ff;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 49px;
+}
+
+.section-title {
+    font-family: 'Noto Serif', serif;
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.section-description {
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.5);
+    max-width: 888px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+.plants-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 20px;
+}
+
+.plant-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.plant-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.plant-image {
+    width: 100%;
+    height: 323px;
+    object-fit: cover;
+}
+
+.plant-info {
+    padding: 30px 20px;
+}
+
+.plant-name {
+    font-size: 22px;
+    font-weight: 500;
+    color: #111;
+    margin-bottom: 20px;
+}
+
+.plant-price {
+    font-size: 22px;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 30px;
+}
+
+.add-to-cart-btn {
+    width: 100%;
+    height: 50px;
+    background-color: #e95a08;
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #d25107;
+}
+.deals-header {
+    padding: 32px 0;
+    text-align: center;
+    background-color: #f5f8ff;
+}
+
+/* Promotions Section */
+.promotions-section {
+    padding: 64px 0;
+    background-color: #f5f8ff;
+}
+
+.promotions-grid {
+    display: flex;
+    gap: 28px;
+    align-items: stretch;
+}
+
+.small-promotions {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    flex: 0 0 367px;
+}
+
+.promo-card {
+    border-radius: 14px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.promo-card.small {
+    height: 201px;
+}
+
+.promo-card.large {
+    flex: 1;
+    height: 423px;
+    border-radius: 22px;
+}
+
+.promo-content {
+    text-align: center;
+    color: white;
+    z-index: 2;
+}
+
+.promo-title {
+    font-family: 'Noto Serif', serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 26px;
+}
+
+.promo-title-large {
+    font-family: 'Noto Serif', serif;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 26px;
+    max-width: 498px;
+}
+
+.promo-link {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: underline;
+    transition: opacity 0.3s ease;
+}
+
+.promo-link-large {
+    color: white;
+    font-size: 28px;
+    font-weight: 600;
+    text-decoration: underline;
+    transition: opacity 0.3s ease;
+}
+
+.promo-link:hover,
+.promo-link-large:hover {
+    opacity: 0.8;
+}
+
+/* Promotional Card Backgrounds */
+.promo-bloom {
+    background-image: url('./assets/deal-ana.png');
+}
+
+.promo-ana {
+    background-image: url('./assets/deal-bloom.png');
+}
+
+.promo-zabo {
+    background-image: url('./assets/deal-zabo.png');
+}
+
+/* Newsletter Section */
+.newsletter-section {
+    height: 533px;
+    background-image: url('./assets/news-letter-bg.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
 
 
+.newsletter-content {
+     /* background-image: url("assets/news-letter-bg.png"); */
+    text-align: center;
+    max-width: 830px;
+    margin: 0 auto;
+}
+
+.newsletter-title {
+    font-family: 'Noto Serif', serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 24px;
+}
+
+.newsletter-form {
+    display: flex;
+    max-width: 830px;
+    margin: 0 auto;
+}
+
+.newsletter-input {
+    flex: 1;
+    height: 50px;
+    padding: 0 20px;
+    border: none;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.5);
+    outline: none;
+}
+
+.newsletter-input::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.newsletter-btn {
+    width: 186px;
+    height: 50px;
+    background-color: #e95a08;
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter-btn:hover {
+    background-color: #d25207;
+}
+
+/* Footer */
+.footer {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9px);
+    padding: 50px 0;
+}
+
+.footer .container {
+    padding: 0 160px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 48px;
+}
+
+.footer-brand {
+    flex: 0 0 359px;
+}
+
+.footer-logo {
+    width: 135px;
+    height: 82px;
+    object-fit: cover;
+    margin-bottom: 16px;
+}
+
+.footer-description {
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.5);
+    line-height: 1.5;
+}
+
+.footer-links {
+    display: flex;
+    gap: 80px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.footer-link {
+    color: #6b7280;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #000;
+}
+
+.footer-social img {
+    width: auto;
+    height: auto;
+}
+
+@media (max-width: 1200px) {
+    .header .container {
+        padding: 0 50px;
+    }
+    
+    .footer .container {
+        padding: 0 50px;
+    }
+    
+    .hero-text {
+        padding-left: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header .container {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 0 20px;
+    }
+    
+    .nav-list {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .nav-link{
+        display: none;
+    }
+    
+    .cart-item {
+        display:inline-block;
+        align-items: center;
+        gap: 5px;
+    }
+    /* .cart-link{
+        display:inline;
+         justify-content: space-between;
+    }
+    .cart-price{
+        display: inline;
+    } */
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .hero-text {
+        padding-left: 0;
+    }
+    
+    .hero-title {
+        font-size: 40px;
+    }
+    
+    .lover-content {
+        flex-direction: column;
+    }
+    
+    .trusted-badge {
+        display: none;
+    }
+    
+    .plants-grid {
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+    }
+    
+    .promotions-grid {
+        flex-direction: column;
+    }
+    
+    .small-promotions {
+        flex: none;
+    }
+    
+    .newsletter-form {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .newsletter-btn {
+        width: 100%;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-links {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 36px;
+    }
+    
+    .hero-title {
+        font-size: 32px;
+    }
+    
+    .lover-title {
+        font-size: 36px;
+    }
+    
+    .newsletter-title {
+        font-size: 36px;
+    }
+    
+    .promo-title-large {
+        font-size: 28px;
+    }
+}
